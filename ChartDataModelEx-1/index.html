@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="d3AngularApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJSFactory</title>
+    
+    
+
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js" ></script>
+    <script src="js/DummyDataProvider.js"></script>
+    <script src="js/fcDataProviderFactory.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+  function clear(elementID)
+{
+    document.getElementById(elementID).innerHTML="";
+}
+</script>
+  </head>
+
+<body>
+<div ng-controller="DummyDataProvider">
+<div align="center">
+ <h3><b>DONUT PIE CHART USING ANGULAR-FACTORIES</b></h3><br><br><br>
+</div>
+<div class="col-md-3"></div>
+ <div class="col-md-6">
+  <fc-bars data="data"></fc-bars>
+  </div>
+ <div>
+ 
+  <div class="col-md-3" id="tooltip"></div> 
+  </div>
+</div>
+  </body>
+
+</html>
