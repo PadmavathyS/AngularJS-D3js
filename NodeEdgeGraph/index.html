@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" ng-app="todo">
+<head>	
+	<title>Angular js </title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/jquery-ui.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/angular.min.js"></script>
+	<script src="js/d3.js"></script>
+	
+	
+	<script src="js/app.js"></script>
+	<script>
+		function clear(elementID)
+{
+    document.getElementById(elementID).innerHTML="";
+}
+	</script>
+
+
+</head>
+<body>
+	<div ng-controller="TodoCtrl">
+	<div class="container" ng-controller="TodoCtrl" id="playground">
+		
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="row" id="todoAdd">
+					<form class="form-inline" role="form"></form>
+					<div class="form-group">
+						<input class="todoField" id="newTodoField" type="text" ng-model="newTodo" placeholder="Add New Node Name" ng-enter/>					<!--<input class="todoField" id="newTodoField" type="text" ng-model="newTodo" placeholder="Add New Task info" ng-enter>-->
+						<input class="todoField1" id="newTodoField1" ng-model="newTodoTask" placeholder="Add value " ng-enter/>
+						
+						<button id="todoSubmit" class="btn btn-default" ng-click="addNode();render()">Add </button>
+						
+						
+					</div>					
+				</div>
+				
+			</div>
+			<div  class="col-xs-8" id="svgVisualize">
+			</div>
+		</div>
+		<!-- <div id="json"><code>{{ nodes | json}}</code></div>
+		 <div id="json"><code>{{ links | json}}</code></div>-->
+	</div>
+	</div>
+</body>
+</html>

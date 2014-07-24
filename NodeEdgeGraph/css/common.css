@@ -1,0 +1,79 @@
+#playground{
+	margin-top: 100px;
+}
+.emphasis {
+  font-family: vast-shadow, sans-serif;
+  color: blue;
+  font-size: larger;
+}
+.todo-filter {
+	margin-bottom: 25px;
+}
+.todo-filter>li>a{
+	padding: 8px 12px;
+	font-size: 12px;
+}
+.blue {
+    color: blue;
+}
+#todoAdd {
+	margin-left: 40px;
+}
+.todoField{
+	padding-left: 5px;
+	font-size: 20px;
+}
+#newTodoField{
+	margin: 20px;
+	width: 75%;
+	border: 2px solid grey;
+}
+.todoField1{
+	padding-left: 5px;
+	font-size: 20px;
+	height: 75px;
+}
+#main
+{
+	margin-left: 10px;
+}
+#newTodoField1{
+	margin: 20px;
+	width: 75%;
+	height: 100%;
+	border: 2px solid grey;
+}
+#todoSubmit{
+	margin-top: -5px;
+	margin-left: 70px;
+	border : 3px solid blue;
+}
+#todoclear{
+	margin-top: -5px;
+	margin-left: 2px;
+	border : 3px solid blue;
+}
+#todoSubmit:hover{
+	border : 3px solid darkblue;
+	 background: grey;
+	 color: white;
+}
+#todoclear:hover{
+	border : 3px solid darkblue;
+	 background: grey;
+	 color: white;
+}
+.todoTask{
+	margin-bottom: 20px;
+	
+}
+#scroll
+{
+	overflow-y: scroll;
+	height: auto;
+}
+.todoName{
+	font-size: 20px;
+	border-bottom: 1px lightgray solid;
+	padding-bottom:5px;
+}
