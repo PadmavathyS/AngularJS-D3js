@@ -1,0 +1,25 @@
+<html>
+	<head>
+
+		<script src="tp/angular.js"></script>
+		<script src="tp/d3.js"></script>
+		<script src="js/fc_app.js"></script>
+		<script src="js/fc_data_provider.js"></script>
+		<script src="js/fc_charts.js"></script>
+		<script src="js/dummydataprovider.js"></script>
+
+	</head>
+<body bgcolor="#AAAAAA" ng-app="fc-charts" onload="addPie();return false">
+	<!-- fc-data-provider provider-name="OlxDataProvider" implementation="olxDataProviderImpl"> 
+	</fc-data-provider -->
+	<fc-data-provider provider-name="DummyDataProvider" implementation="dummyDataProvider"> 
+	</fc-data-provider>
+	<div ng-controller="fcChartDemoController" id='mycontroller' style="background-color:#AAAAAA;width:auto;height:400px;position:absolute;left:150px;top:150px;">
+			<fc-bar-chart id='fc-test-chart' legend_pos='[600,20]' text_mode='legend' chart_y_attr='val1' chart_key_attr="year" chart_colors='["#300204","#FF6600","#4DAF4A","#377EB8","#555555"]' fc_data_provider='DummyDataProvider'>
+			</fc-bar-chart>
+			<div id="#legnd">
+			
+		</div>
+	</div>
+</body>
+</html>
